@@ -18,6 +18,6 @@ class HelloResourceTests {
     fun helloTest() {
         val entity = testRestTemplate.getForEntity<String>("/")
         assertThat(entity.statusCode).isEqualTo(HttpStatus.OK)
-        assertThat(entity.body).isEqualTo("hello world")
+        assertThat(entity.body).isEqualTo("hello worldd")
     }
 }
